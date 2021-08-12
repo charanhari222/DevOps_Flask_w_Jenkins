@@ -9,12 +9,12 @@ pipeline {
 		      python setup.py build"""
             }
         }
-        stage('Test') {
-            steps {
-                echo 'Testing...'
-		bat 'pytest tests'
-            }
-        }
+      //  stage('Test') {
+        //    steps {
+          //      echo 'Testing...'
+		//bat 'pytest tests'
+            //}
+        //}
         stage('Deploy') {
             steps {
                 echo 'Deploying...'
