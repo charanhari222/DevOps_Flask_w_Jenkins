@@ -17,7 +17,7 @@ pipeline {
         //}
         stage('Deploy') {
             steps {
-               bat 'python src/myapp.py'
+               bat 'python src/my_app.py'
             }
         }
     }
