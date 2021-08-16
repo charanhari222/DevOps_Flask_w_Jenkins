@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
-		bat """pip install -r requirements.txt
+		bat """pip3 install -r requirements.txt
 		      python setup.py build"""
             }
         }
