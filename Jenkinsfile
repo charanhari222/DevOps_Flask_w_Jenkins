@@ -15,6 +15,11 @@ pipeline {
 		//bat 'pytest tests'
             //}
         //}
+	    stage('result'){
+		    steps{
+			    hygieiaBuildPublishStep buildStatus: 'Success'
+		    }
+	    }
         stage('Deploy') {
             steps {
                bat 'python src/my_app.py'
